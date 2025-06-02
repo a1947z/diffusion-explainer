@@ -57,7 +57,7 @@ textGeneratorL2ExplDiv
 // tokenizer
 textGeneratorL2ExplDiv.append("div")
     .attr("id", "text-vector-generator-l2-tokenizer-container")
-    .text("Tokenizer")
+    .text("分词器(Tokenizer)")
 
 textGeneratorL2ExplDiv
     .append("div")
@@ -76,7 +76,7 @@ textGeneratorL2ExplDiv
 textGeneratorL2ExplDiv
     .append("div")
         .attr("id", "text-vector-generator-l2-tokenizer-out-expl-text")
-        .text("77 tokens")
+        .text("77个分词(77 tokens)")
 
 // Arrow and explain truncate/padding
 textGeneratorL2ExplDiv
@@ -102,7 +102,7 @@ d3.select("#text-vector-generator-l2-tokenizer-out-detailed-expl-arrow g")
 d3.select("#text-vector-generator-l2-tokenizer-out-detailed-expl-container")
     .append("div")
         .attr("id", "text-vector-generator-l2-tokenizer-out-detailed-expl-text")
-        .text("Truncate if prompt consists of more than 77 tokens (words) Pad with <end> if less than 77 tokens")
+        .text("如果提示词超过77个分词则截断，如果少于77个分词则用<end>补齐(Truncate if prompt consists of more than 77 tokens (words) Pad with <end> if less than 77 tokens)")
 
 // Add tokens (implement this at function and import)
 textGeneratorL2ExplDiv
@@ -113,7 +113,7 @@ drawTokens()
 // Text Encoder
 textGeneratorL2ExplDiv.append("div")
     .attr("id", "text-vector-generator-l2-text-encoder-container")
-    .text("Text Encoder")
+    .text("文本编码器(Text Encoder)")
     .on("mouseover", () => {
         d3.select(`#text-vector-generator-l2-text-encoder-container`)
             .style("background-color", "var(--text1)")
@@ -142,7 +142,7 @@ textGeneratorL2ExplDiv.append("div")
 textGeneratorL2ExplDiv
     .append("div")
         .attr("id", "text-vector-generator-l2-text-encoder-expl-text")
-        .text("vector for each token")
+        .text("每个分词的向量(vector for each token)")
 textGeneratorL2ExplDiv
     .append("div")
         .attr("id", "text-vector-generator-l2-vectors-container")
