@@ -18,7 +18,7 @@ d3.select("#description")
         .attr("id", "description-section-what")
         .attr("class", "description-sec")
         .append("h1")
-            .text("What is Stable Diffusion?")
+            .text("Stable Diffusion是什么?")
 d3.select("#description-section-what")
     .append("p")
         .html(`
@@ -36,7 +36,7 @@ d3.select("#description")
         .attr("id", "description-section-how-work")
         .attr("class", "description-sec")
         .append("h1")
-            .text("How does Stable Diffusion work?")
+            .text("Stable Diffusion如何工作?")
 d3.select("#description-section-how-work")
     .append("p")
         // .text('Stable Diffusion first generates a vector representation of an image depicted in the text prompt. This image representation is then upscaled into a high-resolution image.')
@@ -87,7 +87,7 @@ d3.select("#description-section-how-work")
         .attr("id", "description-subsec-text-representation-generation")
         .attr("class", "description-subsec")
         .append("h2")
-            .text("Text Representation Generation")
+            .text("文本表示生成(Text Representation Generation)")
 d3.select("#description-subsec-text-representation-generation")
     .append("img")
         .attr("class", "description-gif")
@@ -257,7 +257,7 @@ d3.select("#description-section-how-work")
         .attr("id", "description-subsec-image-representation-refining")
         .attr("class", "description-subsec")
         .append("h2")
-            .text("Image Representation Refining")
+            .text("图像表示优化(Image Representation Refining)")
 d3.select("#description-subsec-image-representation-refining")
     .append("img")
         .attr("class", "description-gif")
@@ -409,7 +409,7 @@ d3.select("#description-section-how-work")
         .attr("id", "description-subsec-image-upscaling")
         .attr("class", "description-subsec")
             .append("h2")
-                .text("Image Upscaling")
+                .text("图像上采样(Image Upscaling)")
 d3.select("#description-subsec-image-upscaling")
     .append("img")
     .attr("class", "description-gif")
@@ -434,17 +434,17 @@ d3.select("#description-section-comparison")
 d3.select("#description-section-comparison")
     .append("p")
         .html(`
-        Writing text prompts can be very heuristic and repetitive. 
-        For example, starting from the prompt 
-        <span style="color: var(--text3); font-style: italic;">a cute bunny</span>, 
-        you should repetitively add and remove keywords such as 
-        <span style="color: var(--text3); font-style: italic;">in the style of cute pixar character</span>, 
-        until you reach to the desired image.`)
+        编写提示词是一个需要不断尝试和重复的过程。
+        例如，从简单的提示词
+        <span style="color: var(--text3); font-style: italic;">可爱的兔子(a cute bunny)</span>
+        开始，你需要反复添加和删除关键词，比如
+        <span style="color: var(--text3); font-style: italic;">皮克斯可爱角色风格(in the style of cute pixar character)</span>，
+        直到得到你想要的图像。`)
 d3.select("#description-section-comparison")
     .append("p")
         .text(`
-        Therefore, understanding how prompt keywords affect image generation would be greatly helpful for writing and refining your prompt. 
-        Click the keywords highlighted in the text prompt and compare the image generation of the two prompts that differ only in the keywords.`)
+        因此，了解提示词关键字如何影响图像生成对编写和优化提示词非常有帮助。
+        点击提示词中高亮的关键字，对比包含和不包含这些关键字的两个提示词生成的图像.`)
 
 // What can we change
 d3.select("#description")
@@ -472,16 +472,7 @@ d3.select("#description-section-change")
     .append("p")
         .text("Additionally, there are other hyperparameters that are not included in the Diffusion Explainer, such as the total number of timesteps, image size, and the type of scheduler.")
 
-// How implemented?
-d3.select("#description")
-    .append("div")
-        .attr("id", "description-section-implement")
-        .attr("class", "description-sec")
-        .append("h1")
-            .text("How is Diffusion Explainer implemented?")
-d3.select("#description-section-implement")
-    .append("p")
-        .text("We implement the interactive visualizations for Diffusion Explainer using Javascript and D3.js.")
+
 
 // How implemented?
 d3.select("#description")
@@ -489,10 +480,10 @@ d3.select("#description")
         .attr("id", "description-section-who")
         .attr("class", "description-sec")
         .append("h1")
-            .text("Who developed the Diffusion Explainer?")
+            .text("谁开发了Diffusion Explainer?")
 d3.select("#description-section-who")
     .append("p")
-        .html(`Diffusion Explainer was developed by 
+        .html(`这个演示来自Git上的开源项目Diffusion Explainer，它由 
         <a href="http://www.seongmin.xyz">Seongmin Lee</a>, 
         <a href="https://bhoov.com">Ben Hoover</a>, 
         <a href="http://hendrik.strobelt.com">Hendrik Strobelt</a>, 
@@ -502,5 +493,5 @@ d3.select("#description-section-who")
         <a href="https://www.linkedin.com/in/kevinyli/">Kevin Li</a>, 
         <a href="https://haekyu.com">Haekyu Park</a>, 
         <a href="https://alexanderyang.me">Alex Yang</a>, 
-        and 
-        <a href="https://poloclub.github.io/polochau/">Polo Chau</a>.`)
+        和 
+        <a href="https://poloclub.github.io/polochau/">Polo Chau</a>一起开发.`)
