@@ -233,7 +233,8 @@ d3.select("#prompt-selector-dropdown-container")
             .on("mouseover", function () {
                 window.promptHovered = true;
                 let groupIdx = +(this.id.split("-")[4])
-                let p = d3.select(`#${this.id}`).text()
+                // let p = d3.select(`#${this.id}`).text()
+                let p = window.prompts[groupIdx][0]
                 let p2 = window.prompts[groupIdx][1]
                 let pCode1 = window.promptsHtmlCode[groupIdx][0]
                 let pCode2 = window.promptsHtmlCode[groupIdx][1]

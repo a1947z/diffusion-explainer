@@ -2,8 +2,9 @@ function promptChanged() {
     let p = d3.select(`#${this.id}`).text()
     let i = this.id.split("-")[4]
     // change generated image and latent visualization
-    window.selectedPrompt = p
+    
     window.selectedPromptGroupIdx = +i
+    window.selectedPrompt = window.prompts[window.selectedPromptGroupIdx][0]
     window.selectedPrompt2 = window.prompts[window.selectedPromptGroupIdx][1];
     window.selectedPromptHtmlCode = window.promptsHtmlCode[window.selectedPromptGroupIdx][0];
     window.selectedPromptHtmlCode2 = window.promptsHtmlCode[window.selectedPromptGroupIdx][1];

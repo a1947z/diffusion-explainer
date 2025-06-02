@@ -13,7 +13,7 @@ window.prompts = [
     ["a cute rabbit knight, big eyes, holding up a carrot, zootopia", "a cute rabbit knight, holding up a carrot, zootopia"],
     ["a cute puppy, in the style of Albert Marquet", "a cute puppy"],
 ]
-window.promptsHtmlCode = [
+window.promptsHtmlCodeEN = [
     ["a cute and adorable bunny, with huge clear eyes, holding a bunch of flowers, <span class='prompt-keyword'>in the style of cute pixar character</span>", "a cute and adorable bunny, with huge clear eyes, holding a bunch of flowers"],
     ["a <span class='prompt-keyword'>very very very very very</span> beautiful cityscape", "a beautiful cityscape"],
     ["a <span class='prompt-keyword'>vibrant</span> renaissance portrait of an <span class='prompt-keyword'>energetic</span> noble woman, holding an iphone", "a <span class='prompt-keyword'>muted</span> renaissance portrait of a <span class='prompt-keyword'>sad</span> noble woman, holding an iphone"],
@@ -27,6 +27,22 @@ window.promptsHtmlCode = [
     ["calm winter night, <span class='prompt-keyword'>Thomas Kinkade</span>", "calm winter night, <span class='prompt-keyword'>Van Gogh</span>"],
     ["a cute rabbit knight, <span class='prompt-keyword'>big eyes</span>, holding up a carrot, zootopia", "a cute rabbit knight, holding up a carrot, zootopia"],
     ["a cute puppy, <span class='prompt-keyword'>in the style of Albert Marquet</span>", "a cute puppy"],
+]
+
+window.promptsHtmlCode = [
+    ["一只可爱的兔子，大大的清澈眼睛，捧着一束花，<span class='prompt-keyword'>皮克斯风格</span> (a cute and adorable bunny, with huge clear eyes, holding a bunch of flowers, <span class='prompt-keyword'>in the style of cute pixar character</span>)", "一只可爱的兔子，大大的清澈眼睛，捧着一束花 (a cute and adorable bunny, with huge clear eyes, holding a bunch of flowers)"],
+    ["<span class='prompt-keyword'>非常非常非常非常非常</span>美丽的城市风景 (a <span class='prompt-keyword'>very very very very very</span> beautiful cityscape)", "美丽的城市风景 (a beautiful cityscape)"],
+    ["<span class='prompt-keyword'>充满活力的</span>文艺复兴时期<span class='prompt-keyword'>精力充沛的</span>贵族女性肖像，手持iPhone (a <span class='prompt-keyword'>vibrant</span> renaissance portrait of an <span class='prompt-keyword'>energetic</span> noble woman, holding an iphone)", "<span class='prompt-keyword'>低沉的</span>文艺复兴时期<span class='prompt-keyword'>悲伤的</span>贵族女性肖像，手持iPhone (a <span class='prompt-keyword'>muted</span> renaissance portrait of a <span class='prompt-keyword'>sad</span> noble woman, holding an iphone)"],
+    ["可爱的熊猫在<span class='prompt-keyword'>竹林中</span>弹吉他 (a cute panda playing the guitar <span class='prompt-keyword'>in a bamboo forest</span>)", "可爱的熊猫弹吉他 (a cute panda playing the guitar)"],
+    ["水边沙滩上的<span class='prompt-keyword'>菠萝</span> (a <span class='prompt-keyword'>pineapple</span> by the water on a beautiful beach)", "水边沙滩上的<span class='prompt-keyword'>猴面包树</span> (a <span class='prompt-keyword'>baobab tree</span> by the water on a beautiful beach)"],
+    ["<span class='prompt-keyword'>蜘蛛侠</span>在太空中 (<span class='prompt-keyword'>spiderman</span> in space)", "<span class='prompt-keyword'>小熊维尼</span>在太空中 (<span class='prompt-keyword'>winnie the pooh</span> in space)"],
+    ["海边的城堡，<span class='prompt-keyword'>Artstation流行风格</span> (a castle by a sea, <span class='prompt-keyword'>trending on artstation</span>)", "海边的城堡 (a castle by a sea)"],
+    ["可爱迷人的4岁女孩，拥有魔法力量，宇宙能量，甜美的笑容，数字绘画，超写实，<span class='prompt-keyword'>高度细节，清晰，杰作</span> (a cute and lovely 4-year-old baby girl with a magical power, cosmic energy, lovely smile, digital painting, hyperrealistic, <span class='prompt-keyword'>highly detailed, sharp, masterpiece</span>)", "可爱迷人的4岁女孩，拥有魔法力量，宇宙能量，甜美的笑容，数字绘画，超写实 (a cute and lovely 4-year-old baby girl with a magical power, cosmic energy, lovely smile, digital painting, hyperrealistic)"],
+    ["男孩制作魔法药水的水彩画，高度细节，<span class='prompt-keyword'>奇幻风格</span> (a water painting of a boy, making a magical potion, highly detailed, <span class='prompt-keyword'>fantasy</span>)", "男孩制作魔法药水的水彩画，高度细节 (a water painting of a boy, making a magical potion, highly detailed)"],
+    ["骑着机器马的赛博朋克牛仔，<span class='prompt-keyword'>原子朋克风格</span> (a cowboy cyborg riding a robot horse, <span class='prompt-keyword'>atompunk</span>)", "骑着机器马的赛博朋克牛仔 (a cowboy cyborg riding a robot horse)"],
+    ["宁静的冬夜，<span class='prompt-keyword'>托马斯·金凯德风格</span> (calm winter night, <span class='prompt-keyword'>Thomas Kinkade</span>)", "宁静的冬夜，<span class='prompt-keyword'>梵高风格</span> (calm winter night, <span class='prompt-keyword'>Van Gogh</span>)"],
+    ["可爱的兔子骑士，<span class='prompt-keyword'>大眼睛</span>，举着胡萝卜，疯狂动物城风格 (a cute rabbit knight, <span class='prompt-keyword'>big eyes</span>, holding up a carrot, zootopia)", "可爱的兔子骑士，举着胡萝卜，疯狂动物城风格 (a cute rabbit knight, holding up a carrot, zootopia)"],
+    ["可爱的小狗，<span class='prompt-keyword'>阿尔伯特·马奎特风格</span> (a cute puppy, <span class='prompt-keyword'>in the style of Albert Marquet</span>)", "可爱的小狗 (a cute puppy)"],
 ]
 window.selectedPromptGroupIdx = 0;
 window.selectedPrompt = window.prompts[window.selectedPromptGroupIdx][0];
