@@ -51,6 +51,7 @@ d3.select("#generate-text-vector-l3-expl-text-1")
     .append("div")
         .attr("id", "generate-text-vector-l3-expl-text-1-2")
         .text("文本编码器(Text Encoder)")
+        
 d3.select("#generate-text-vector-l3-expl-text-1")
     .append("div")
         .attr("id", "generate-text-vector-l3-expl-text-1-3")

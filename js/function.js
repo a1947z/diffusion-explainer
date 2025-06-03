@@ -178,7 +178,7 @@ function updateStep(timestep) {
 
     // Latent denoiser l2 expl update
     d3.select("#denoise-latent-l2-expl-prev-latent-timestep").text(timestep-1)
-    d3.select("#denoise-latent-l2-expl-prev-latent-text").text(`Representation of timestep ${window.timestep-1}`)
+    d3.select("#denoise-latent-l2-expl-prev-latent-text").text(`第 ${window.timestep-1} timestep时间步的图像表达`)
     d3.select("#improved-latent-timestep").text(timestep)
     if (window.promptHovered) {
         d3.select("#denoise-latent-l2-expl-prev-latent-img").attr("src", `./assets/latent_viz/${window.hoveredPrompt}/${window.seed}_${window.gs}_${timestep-1}.jpg`)

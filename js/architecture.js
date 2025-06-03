@@ -306,6 +306,8 @@ d3.select("#architecture-container")
         .attr("id", "text-vector-generator-container")
         .attr("class", "architecture-rectangle architecture-component-container denoise-latent-expand-move-to-left")
         .text("文本表示生成器(Text Representation Generator)")
+        .style("font-size", "14px")
+        .style("line-height", "1.2")  // reduces vertical spacing
         .on("mouseover", (e) => {
             if (!window.compare && !window.textVectorGeneratorL2Expanded) d3.select("#text-vector-generator-container").style("background-color", "var(--text0)")
             else if (window.compare) {
@@ -468,6 +470,8 @@ d3.select("#architecture-container")
         .attr("id", "latent-denoiser-container")
         .attr("class", "architecture-rectangle architecture-component-container denoise-latent-expand-move-to-left")
         .text("图像表示优化器(Image Representation Refiner)")
+        .style("font-size", "14px")
+        .style("line-height", "1.2")  // reduces vertical spacing
         .on("mouseover", (e) => {
             if (!window.compare && !window.latentDenoiserL2Expanded) {
                 d3.select("#latent-denoiser-container").style("background-color", "var(--img0)")

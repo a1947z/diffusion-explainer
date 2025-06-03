@@ -54,7 +54,9 @@ d3.select("#latent-denoiser-l2-expl-container")
 d3.select("#latent-denoiser-l2-expl-container")
     .append("div")
         .attr("id", "latent-denoiser-l2-expl-title")
-        .text("Image Representation Refiner")
+        .text("图像表示优化器(Image Representation Refiner)")
+        .style("font-size", "14px")
+        .style("line-height", "1.2") 
 
 d3.select("#latent-denoiser-l2-expl-container")
     .append("div")
@@ -73,7 +75,7 @@ d3.select("#denoise-latent-l2-expl-prev-latent-image-container")
 d3.select("#denoise-latent-l2-expl-prev-latent-container")
         .append("div")
             .attr("id", "denoise-latent-l2-expl-prev-latent-text")
-            .text(`Representation of timestep ${window.timestep-1}`)
+            .text(`第 ${window.timestep-1}timestep时间步的图像表达`)
 
 
 // latent to UNet arrow
@@ -113,13 +115,13 @@ d3.select("#denoise-latent-l2-expl-unet-container")
 d3.select("#denoise-latent-l2-expl-unet-container")
     .append("div")
         .attr("id", "denoise-latent-l2-expl-unet-desc-text")
-        .text("predicts noise to remove")
+        .text("预测需要去除的噪音点")
 
 // Guidance scale text 
 d3.select("#latent-denoiser-l2-expl-container")
     .append("div")
     .attr("id", "denoise-latent-l2-expl-guidance-scale-text")
-    .text("Guide image generation")
+    .text("引导图像生成")
 
 // ADD arrow and explanations for guidance scale
 let x_=12;
@@ -151,15 +153,21 @@ d3.select("#denoise-latent-l2-expl-guidance-scale-expl-text")
 d3.select("#denoise-latent-l2-expl-guidance-scale-expl-text")
     .append("div")
         .text("文本提示对图像生成的影响强度")
+        .style("font-size", "10px")
+        .style("line-height", "1.2") 
 d3.select("#denoise-latent-l2-expl-guidance-scale-expl-text")
     .append("div")
         .attr("id", "denoise-latent-l2-expl-guidance-scale-expl-text-2")
         // .text("Higher means stronger adherence.")
         .text("高值-强制图像更贴近文本描述，但可能降低多样性\n；低值-允许更多随机性，但可能偏离文本意图。")
+        .style("font-size", "10px")
+        .style("line-height", "1.2") 
 d3.select("#denoise-latent-l2-expl-guidance-scale-expl-text")
     .append("div")
     .attr("id", "denoise-latent-l2-expl-guidance-scale-expl-text-how")
         .text("更多内容")
+        .style("font-size", "10px")
+        .style("line-height", "1.2") 
         .on("click", expandLatentDenoiserL3)
 
 // ADD noise
